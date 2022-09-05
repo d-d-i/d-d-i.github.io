@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>What's my location?</title>
+<link rel="icon" type="image/x-icon" href="images/favicon.png">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+</head>
+<body>
+<div onclick = "navigator.geolocation.getCurrentPosition(showAltitude)" title = "Get your altitude" >Location</div>
+<div onclick = "showAuthor()" title = "Author of the site" >Author</div>
+<div onclick = "showPaypal()"title = "Donate through paypal" >Donate</div>
+<p class = "empty" ><i>Make sure geolocation is enabled</i></p>
+<h1 id = "title">Your altitude is:</h1>
+<p id="altitude"></p>
+<script src="script.js"></script>
+</body>
+</html>
