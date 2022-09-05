@@ -8,7 +8,7 @@ var b = document.getElementById("altitude");
   }
 
 function showAltitude(position) {
-	var altitude = typeof(position.coords.altitude) == 'number' ? position.coords.altitude + "meters" : "Couldn't find out, some mistake occurred";
+	var altitude = typeof(position.coords.altitude) == 'number' ? position.coords.altitude + " meters" : "Couldn't find out, some mistake occurred";
 	console.log(altitude);
 	a.innerHTML = "Your altitude is:";
     b.innerHTML =  altitude;
